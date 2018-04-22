@@ -5,7 +5,9 @@ void boundaryvalues(
   int jmax,
   double **U,
   double **V,
-  double **P
+  double **P,
+  double **F,
+  double **G	
 )
 {
 	for (int j = 1; j <= jmax; j++)
