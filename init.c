@@ -65,28 +65,28 @@ void init_uvp(
   	double **P
 )
 {
-for (int i = 1; i <= imax-1; i++)
+	int i,j;
+for ( i = 1; i <= imax-1; i++)
   {
-	for (int j = 1; j <= jmax; j++)
+	for ( j = 1; j <= jmax; j++)
 	{
     	U[i][j] = UI;
 	}
   }
 
-for (int i = 1; i <= imax; i++)
+for ( i = 1; i <= imax; i++)
   {
-	for (int j = 1; j <= jmax-1; j++)
+	for ( j = 1; j <= jmax-1; j++)
 	{
     	V[i][j] = VI;
 	}
   }  
-for (int i = 1; i <= imax; i++)
+for ( i = 1; i <= imax; i++)
   {
-	for (int j = 1; j <= jmax; j++)
+	for ( j = 1; j <= jmax; j++)
 	{
     	P[i][j] = PI;
 	}
   }  
   
 }
-

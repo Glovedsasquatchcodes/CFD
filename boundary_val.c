@@ -1,4 +1,4 @@
-#include "boundary_val.h"
+#include <boundary_val.h>
 
 void boundaryvalues(
   int imax,
@@ -7,7 +7,8 @@ void boundaryvalues(
   double **V	
 )
 {
-	for (int j = 1; j <= jmax; j++)
+	int i,j;
+	for (j = 1; j <= jmax; j++)
 	{
 		U[0][j] = 0;
 		U[imax][j] = 0;
@@ -17,7 +18,7 @@ void boundaryvalues(
 		
 	}
 	
-	for (int i = 1; i <= imax; i++)
+	for (i = 1; i <= imax; i++)
 	{
 		V[i][0] = 0;
 		V[i][jmax] = 0;
